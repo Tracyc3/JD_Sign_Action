@@ -8,9 +8,10 @@ on:
     branches:
       - master
   schedule:
-    - cron: 30 23 * * *
+    - cron: 12 23 * * *
   watch:
     types: started
+  workflow_dispatch: 
     
 env:
   JD_COOKIE: ${{ secrets.JD_COOKIE }}
